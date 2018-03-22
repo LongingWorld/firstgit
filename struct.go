@@ -36,4 +36,9 @@ func main() {
 	f.Printf("Of %s and %s, %s is older by %d years.\n", tom.name, joe.name, tj_Older.name, tj_diff)
 	f.Printf("Of %s and %s, %s is older by %d years.\n", lucy.name, joe.name, lj_Older.name, lj_diff)
 
+	var ming Student
+	ming.name, ming.age, ming.specifity = "Liter", 1000, "Never die"
+	//ming := Student{Person{"Liter", 100}, "Never Die"}
+	f.Printf("%s's age is %d,and %s's specifity is %s.\n", ming.Person.name, ming.age, ming.name, ming.specifity)
+
 }
