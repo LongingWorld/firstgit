@@ -69,7 +69,7 @@ type ElderlyGent interface {
 	SpendSalary(amount float32)
 }
 
-func (h Human) String() string { //实现fmt.Stringer.String interface,
+func (h Human) String() string { //实现fmt.Stringer.String interface
 	return "◇" + h.name + " - " + strconv.Itoa(h.age) + "years - " + h.phone + "℡◇"
 }
 
